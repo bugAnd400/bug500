@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div id='app'>
+			填入月份数字<input type="text" v-model="month" />
+			<li v-if="month=='1'">{{month}}月有31天</li>
+			<li v-if="month=='2'">{{month}}月有28天</li>
+			<li v-if="month=='3'">{{month}}月有31天</li>
+			<li v-if="month=='4'">{{month}}月有30天</li>
+			<li v-if="month=='5'">{{month}}月有31天</li>
+			<li v-if="month=='6'">{{month}}月有30天</li>
+			<li v-if="month=='7'">{{month}}月有31天</li>
+			<li v-if="month=='8'">{{month}}月有31天</li>
+			<li v-if="month=='9'">{{month}}月有30天</li>
+			<li v-if="month=='10'">{{month}}月有31天</li>
+			<li v-if="month=='11'">{{month}}月有30天</li>
+			<li v-if="month=='12'">{{month}}月有31天</li>
+		</div>
+		<script type="text/javascript">
+			let vm = new Vue({
+				el:'#app',
+				data:{
+					month:''
+					
+				}
+			})			
+			
+		</script>
+	</body>
+</html>

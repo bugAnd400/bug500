@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h2>判断大学</h2>
+			<input type="text" v-model="message" />
+			<li v-if="message=='北京大学'">985、211大学</li>
+			<li v-if="message=='清华大学'">985、211大学</li>
+			<li v-if="message=='南京大学'">985、211大学</li>
+			<li v-if="message=='内蒙古大学'">985、211大学</li>
+			<li v-if="message=='复旦大学'">985、211大学</li>
+			<li v-if="message=='浙江大学'">985、211大学</li>
+			<li v-if="message=='北京中国人民大学'">985、211大学</li>
+			<li v-if="message=='南开大学'">985、211大学</li>
+			<li v-if="message=='哈尔滨工业大学'">985、211大学</li>
+			<li v-if="message=='北京理工大学'">985、211大学</li>
+			<li v-if="message=='西安交通大学'">985、211大学</li>
+			<li v-if="message=='北京师范大学'">985、211大学</li>
+			<li v-if="message=='天津大学'">985、211大学</li>
+			<li v-if="message=='广西大学'">211大学</li>
+			<li v-if="message=='华南师范大学'">211大学</li>
+			<li v-if="message=='北京林业大学'">211大学</li>
+			<li v-if="message=='福州大学'">211大学</li>
+			<li v-if="message=='安徽大学'">211大学</li>
+			<li v-if="message=='郑州大学'">211大学</li>
+			<li v-if="message=='云南大学'">211大学</li>
+			<li v-if="message=='长安大学'">211大学</li>
+			<li v-if="message=='华中农业大学'">211大学</li>
+			<li v-if="message=='中国药科大学'">211大学</li>
+			<li v-if="message=='中国石油大学'">211大学</li>
+		</div>
+		<script type="text/javascript">
+			let vm = new Vue({
+				el:'#app',
+				data:{
+					message:''
+				}
+			})
+		</script>
+	</body>
+		
+</html>
