@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<h1>国家代号查询器</h1>
+		<div id="app">
+			请输入国家代号查询:<input type="text" v-model="userNumber" placeholder="请大写"  /><br>
+			<div v-for="country in countries">
+				<div v-if="userNumber==country.daima">
+					国家是：{{country.name}}<br>
+					首都是：{{country.shoudu}}<br>
+					代码是: {{country.daima}}
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		let v = new Vue({
+			el:"#app",
+			data:{
+				userNumber:'',
+				countries:[
+					{name:'中国',shoudu:'北京',daima:'CN'},
+					{name:'法国',shoudu:'巴黎',daima:'FR'},
+					{name:'英国',shoudu:'伦敦',daima:'GB'},
+					{name:'韩国',shoudu:'首尔',daima:'KR'},
+					{name:'意大利',shoudu:'罗马',daima:'IT'}
+				]
+			}
+		})
+	</script>
+</html>
